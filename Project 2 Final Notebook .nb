@@ -1,0 +1,330 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     12075,        322]
+NotebookOptionsPosition[     11192,        299]
+NotebookOutlinePosition[     11584,        315]
+CellTagsIndexPosition[     11541,        312]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["The Four Tower Temple ", "Title",
+ CellChangeTimes->{{3.94346859666492*^9, 3.943468611260057*^9}, {
+  3.943468857731719*^9, 
+  3.943468858851589*^9}},ExpressionUUID->"a52a999e-7fb1-4be4-84af-\
+2b8bb7946d8a"],
+
+Cell["\<\
+MATH 250 Mathematical Computing
+Opeyemi Destiny Julius\
+\>", "Subtitle",
+ CellChangeTimes->{{3.9434686202815523`*^9, 
+  3.943468632517015*^9}},ExpressionUUID->"9b79bc9f-5c75-41b1-9458-\
+182b170ace80"],
+
+Cell[CellGroupData[{
+
+Cell["Description", "Section",
+ CellChangeTimes->{{3.943468733545878*^9, 3.943468767682501*^9}, {
+  3.94346885073225*^9, 
+  3.943468851608697*^9}},ExpressionUUID->"645c848d-cf08-4609-9d52-\
+cfd4b07c3770"],
+
+Cell[TextData[StyleBox["This art conveys a miniature three-dimensional temple \
+formed by geometric shapes, inspired by the Triskelion symbol of intertwining \
+circles or spirals. This design features a rigid structure that embodies the \
+precision and symmetry of coordinates drawn from 3D space.\n\nTL --> Top Left\
+\nTR --> Top Right\nBL --> Bottom Left\nBR --> Bottom Right\nThis scheme \
+helped keep track of the different parts. \n\nCylinder [ ], Cuboid [ ] are \
+the 3d shapes for disk and rectangle respectively. The rest is only \
+customizing these 3d shapes to form something meaningful.\n\nHit Run to \
+display the mathematical art!",
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.943468773932474*^9, 3.943468778312052*^9}, {
+  3.94346883691471*^9, 3.943468841812641*^9}, {3.943468913903894*^9, 
+  3.943469041318303*^9}, {3.943469082157831*^9, 3.943469092821343*^9}, {
+  3.943470133082438*^9, 
+  3.943470234295937*^9}},ExpressionUUID->"3fc7bed5-5cc0-4126-af39-\
+75b9d70f287f"],
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", " ", "[", 
+  RowBox[{"List", "[", "\[IndentingNewLine]", "\t\t\t\t", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"Red", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "0"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "2"}], "}"}]}], "}"}], ",", 
+        " ", "6"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Largest", " ", "TL"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t               ", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "1.9"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "7"}], "}"}]}], "}"}], ",", 
+        " ", "4"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Medium", " ", "TL"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t           ", 
+    RowBox[{"{", 
+     RowBox[{"Yellow", ",", " ", 
+      RowBox[{"Cylinder", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "30"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "0", ",", " ", "6"}], "}"}]}], "}"}], ",", 
+        " ", "2"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Smallest", " ", "TL"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t                     ", 
+    RowBox[{"{", 
+     RowBox[{"Red", ",", " ", 
+      RowBox[{"Cylinder", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "0"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "2"}], "}"}]}], "}"}], ",", 
+        " ", "6"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Largest", " ", "TR"}], " ", "*)"}], " ", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t         ", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "1.9"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "7"}], "}"}]}], "}"}], ",", 
+        " ", "4"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Medium", " ", "TR"}], "*)"}], "\[IndentingNewLine]", 
+    "\t\t\t\t\t", "\[IndentingNewLine]", "\t\t\t\t\t      ", 
+    RowBox[{"{", 
+     RowBox[{"Yellow", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "30"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", " ", "33", ",", " ", "6"}], "}"}]}], "}"}], ",", 
+        " ", "2"}], "]"}]}], "}"}], ",", 
+    RowBox[{"(*", " ", 
+     RowBox[{"Smallest", " ", "TR"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", "\t\t\t\t     ", 
+    RowBox[{"{", 
+     RowBox[{"Red", ",", " ", 
+      RowBox[{"Cylinder", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "0"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "2"}], "}"}]}], "}"}], ",", 
+        " ", "6"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Largest", " ", "BL"}], "*)"}], "\[IndentingNewLine]", 
+    "\t\t\t\t\t", "\[IndentingNewLine]", "\t\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "1.9"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "7"}], "}"}]}], "}"}], ",",
+         " ", "4"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Medium", " ", "BL"}], "*)"}], "\[IndentingNewLine]", 
+    "\t\t\t\t\t", "\[IndentingNewLine]", "\t\t\t\t\t      ", 
+    RowBox[{"{", 
+     RowBox[{"Yellow", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "30"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "6"}], "}"}]}], "}"}], ",",
+         " ", "2"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Smallest", " ", "BL"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t", "\[IndentingNewLine]", 
+    "\t\t\t\t\t  ", 
+    RowBox[{"{", 
+     RowBox[{"Red", ",", " ", 
+      RowBox[{"Cylinder", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "0"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "33", ",", " ", "2"}], "}"}]}], "}"}], ",",
+         " ", "6"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Largest", " ", "BR"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t         ", 
+    RowBox[{"{", 
+     RowBox[{"Blue", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "1.9"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "7"}], "}"}]}], "}"}], ",", 
+        " ", "4"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Medium", " ", "BR"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"Yellow", ",", " ", 
+      RowBox[{"Cylinder", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "30"}], "}"}], ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"60", ",", " ", "0", ",", " ", "2"}], "}"}]}], "}"}], ",", 
+        " ", "2"}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Smallest", " ", "BR"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t", "\[IndentingNewLine]", 
+    "\t\t\t\t\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"Pink", ",", " ", 
+      RowBox[{"Cuboid", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"15", ",", " ", "39", ",", " ", 
+          RowBox[{"-", "10"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"45", ",", " ", "50", ",", " ", "0.5"}], "}"}]}], "]"}]}], 
+     "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Largest", " ", "Step"}], "*)"}], " ", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"Pink", ",", " ", 
+      RowBox[{"Cuboid", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"15", ",", " ", "49", ",", " ", 
+          RowBox[{"-", "10"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"45", ",", " ", "60", ",", " ", 
+          RowBox[{"-", "5"}]}], "}"}]}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Medium", " ", "Step"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t\t\t\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"Pink", ",", " ", 
+      RowBox[{"Cuboid", " ", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"15", ",", " ", "59", ",", " ", 
+          RowBox[{"-", "10"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"45", ",", " ", "70", ",", " ", 
+          RowBox[{"-", "8"}]}], "}"}]}], "]"}]}], "}"}], ",", " ", 
+    RowBox[{"(*", 
+     RowBox[{"Smallest", " ", "Step"}], "*)"}], "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\t\t\t\t      ", 
+    RowBox[{"{", 
+     RowBox[{"Purple", ",", " ", 
+      RowBox[{"Cuboid", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "10"}], ",", " ", 
+          RowBox[{"-", "10"}], ",", " ", 
+          RowBox[{"-", "10"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"70", ",", " ", "40", ",", " ", "0.1"}], "}"}]}], "]"}]}], 
+     "}"}]}], " ", 
+   RowBox[{"(*", "Base", "*)"}], "\[IndentingNewLine]", "]"}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.9434690547944107`*^9, 3.943469060992093*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"fc77af37-2526-4084-9355-9e10a6ed16aa"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.940185081486292*^9, 3.940185082877502*^9}, {
+  3.943468574393078*^9, 
+  3.943468577212331*^9}},ExpressionUUID->"b1a99fb8-4aaa-46f3-a7fc-\
+7cde6676c28a"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1436, 768},
+WindowMargins->{{Automatic, 0}, {1, Automatic}},
+FrontEndVersion->"14.1 for Mac OS X x86 (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"236e708c-4c3f-492b-a0aa-cd41228cf405"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 213, 4, 96, "Title",ExpressionUUID->"a52a999e-7fb1-4be4-84af-2b8bb7946d8a"],
+Cell[792, 28, 210, 6, 83, "Subtitle",ExpressionUUID->"9b79bc9f-5c75-41b1-9458-182b170ace80"],
+Cell[CellGroupData[{
+Cell[1027, 38, 204, 4, 66, "Section",ExpressionUUID->"645c848d-cf08-4609-9d52-cfd4b07c3770"],
+Cell[1234, 44, 988, 15, 319, "Text",ExpressionUUID->"3fc7bed5-5cc0-4126-af39-75b9d70f287f"],
+Cell[2225, 61, 8735, 228, 764, "Input",ExpressionUUID->"fc77af37-2526-4084-9355-9e10a6ed16aa"],
+Cell[10963, 291, 201, 4, 29, "Input",ExpressionUUID->"b1a99fb8-4aaa-46f3-a7fc-7cde6676c28a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
